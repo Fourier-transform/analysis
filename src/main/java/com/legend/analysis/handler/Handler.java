@@ -1,16 +1,19 @@
 package com.legend.analysis.handler;
 
-import com.legend.analysis.mapper.LogMapper;
-import com.legend.analysis.reader.Reader;
-import org.springframework.beans.factory.annotation.Autowired;
+import com.alibaba.fastjson.JSONArray;
+import com.alibaba.fastjson.JSONObject;
+import org.apache.commons.io.FileUtils;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;
 
+import java.io.File;
+import java.util.Iterator;
 import java.util.List;
+
 @Service
 public class Handler {
 
-    public static void  main(String a[]){
+    public static void main(String a[]) {
 
       /*  Reader r=new Reader();
         List list = r.readRawFile("D://123.txt","utf-8");
@@ -19,8 +22,9 @@ public class Handler {
                 }
         );*/
     }
-    @Scheduled(fixedDelay=2000)
-    public void doSomeThing(){
+
+    @Scheduled(fixedDelay = 2000)
+    public void doSomeThing() {
 
     }
 }

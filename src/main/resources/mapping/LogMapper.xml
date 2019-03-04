@@ -6,8 +6,8 @@
     <result column="field1" jdbcType="VARCHAR" property="field1" />
   </resultMap>
   <insert id="insert" parameterType="com.legend.analysis.mapper.Log">
-    insert into t_log (id, field1)
-    values (#{id,jdbcType=VARCHAR}, #{field1,jdbcType=VARCHAR})
+    insert into t_log (id, field1,field2)
+    values (#{id,jdbcType=VARCHAR}, #{field1,jdbcType=VARCHAR}, #{field2,jdbcType=VARCHAR})
   </insert>
   <insert id="insertSelective" parameterType="com.legend.analysis.mapper.Log">
     insert into t_log
